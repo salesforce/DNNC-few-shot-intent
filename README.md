@@ -27,6 +27,8 @@ This project is a collaboration with UIC and HUST, through an internship project
 This code base is designed to reproduce our experiments in our paper, and can be used with other datasets.
 For any technical details, please refer to <a href="https://arxiv.org/abs/2010.13009">our paper</a>.
 
+<b>When using our code or the methods, please cite our paper: <a href="https://www.aclweb.org/anthology/2020.emnlp-main.411.bib">reference</a>.</b>
+
 ## 1. Getting started
 
 ### 1.1. Install a pytorch environment by anaconda
