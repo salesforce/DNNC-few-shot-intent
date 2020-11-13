@@ -342,6 +342,7 @@ The remaining evaluation process is exactly the same as before.
 For any questions, feel free to open issues, or shoot emails to
 
 * Kazuma Hashimoto (k.hashimoto@salesforce.com)
+*  <a href="https://jianguoz.github.io/">Jianguo Zhang</a>
 
 ## 4. License
 
