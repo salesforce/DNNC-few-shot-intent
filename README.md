@@ -147,7 +147,7 @@ python pretrain_dnnc.py \
 , where we set the same hyper-parameter setting used in our paper.
 In this example, a RoBERTa-based NLI model will be saved as `./roberta_nli/pytorch_model.bin`.
 If we want to evaluate the model again, we can simply add the `--do_predict` option.
-Alternatively, we also provide our own RoBERTa NLI model at <a href="https://storage.cloud.google.com/sfr-dnnc-few-shot-intent/roberta_nli.zip">this URL</a> (`roberta_nli.zip`) to skip this pretraining step.
+Alternatively, we also provide our own RoBERTa NLI model at <a href="https://storage.googleapis.com/sfr-dnnc-few-shot-intent/roberta_nli.zip">this URL</a> (`roberta_nli.zip`) to skip this pretraining step.
 
 * <b>Training for intent detection</b>
 
