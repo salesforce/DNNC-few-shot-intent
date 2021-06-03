@@ -13,8 +13,9 @@ Table of contents
 -- <a href="https://github.com/MetaMind/DNNC-few-shot-intent#23-Train-and-evaluate-TF-IDF-kNN">2.3. Train and evaluate TF-IDF-kNN</a></br>
 -- <a href="https://github.com/MetaMind/DNNC-few-shot-intent#24-Evaluate-DNNC-joint">2.4. Evaluate DNNC-joint</a></br>
 -- <a href="https://github.com/MetaMind/DNNC-few-shot-intent#25-Train-and-evaluate-classifier">2.5. Train and evaluate classifier</a>
-* <a href="https://github.com/MetaMind/DNNC-few-shot-intent#3-Questions">3. Questions?</a>
-* <a href="https://github.com/MetaMind/DNNC-few-shot-intent#4-License">4. License</a>
+* <a href="https://github.com/MetaMind/DNNC-few-shot-intent#3-More-few-shot-learning-results-without-OOS-intent-detection-on-other-datasets">3. More few-shot learning results without OOS intent detection on other datasets</a>
+* <a href="https://github.com/MetaMind/DNNC-few-shot-intent#4-Questions">4. Questions?</a>
+* <a href="https://github.com/MetaMind/DNNC-few-shot-intent#6-License">5. License</a>
 
 
 ## 0. Introduction
@@ -340,12 +341,32 @@ python train_classifier.py \
 , where semantics of the arguments is consistent with the others.
 The remaining evaluation process is exactly the same as before.
 
-## 3. Questions?
+## More few-shot learning results without OOS intent detection on other datasets
+
+We also report average few-shot learning results without OOS intent detection across five different runs on [CLINC150](https://www.aclweb.org/anthology/D19-1131.pdf), [BANKING77](https://www.aclweb.org/anthology/2020.nlp4convai-1.5.pdf) and [HWU64](https://arxiv.org/pdf/1903.05566.pdf). 
+
+```bash
++----------------------+------------+--------------+--------------+
+|             Datasets |   CLINC150 |        HWU64 |    BANKING77 |   
++======================+============+==============+==============+
+|  USE+CONVRT (5-shot) |      90.49 |        80.01 |        77.75 |         
++----------------------+------------+--------------+--------------+
+|        DNNC (5-shot) |      91.02 |        80.46 |        80.40 |  
++----------------------+------------+--------------+--------------+
+| USE+CONVRT (10-shot) |      93.26 |        85.83 |        85.19 |         
++----------------------+------------+--------------+--------------+
+|       DNNC (10-shot) |      93.76 |        84.72 |        86.71 |  
++----------------------+------------+--------------+--------------+
+Note: results of USE+CONVRT are reported by the original work.
+```
+
+
+## 4. Questions?
 For any questions, feel free to open issues, or shoot emails to
 
 * Kazuma Hashimoto (k.hashimoto@salesforce.com)
 *  <a href="https://jianguoz.github.io/">Jianguo Zhang</a>
 
-## 4. License
+## 5. License
 
 * <a href="./LICENSE.txt">MIT</a>
