@@ -340,12 +340,28 @@ python train_classifier.py \
 , where semantics of the arguments is consistent with the others.
 The remaining evaluation process is exactly the same as before.
 
-## 3. Questions?
+## More few-shot learning results on other datasets
+
+We also report average few-shot learning results without oos intent detection across five different runs on [CLINC150](https://www.aclweb.org/anthology/D19-1131.pdf), [BANKING77](https://www.aclweb.org/anthology/2020.nlp4convai-1.5.pdf) and [HWU64](https://arxiv.org/pdf/1903.05566.pdf). 
+
+```bash
++-------------+----------------------+--------------+
+|   Datasets|   CLINC150 |   HWU64 |   BANKING77 |   
++=============+======================+==============+=================+
+|        USE+CONVRT   |              90.49 |      80.01       |     77.75|         
++-------------+----------------------+--------------+-----------------+
+|         DNNC |         91.02       |    80.46        |     80.40     |  
++-------------+----------------------+--------------+-----------------+
+
+```
+
+
+## 4. Questions?
 For any questions, feel free to open issues, or shoot emails to
 
 * Kazuma Hashimoto (k.hashimoto@salesforce.com)
 *  <a href="https://jianguoz.github.io/">Jianguo Zhang</a>
 
-## 4. License
+## 5. License
 
 * <a href="./LICENSE.txt">MIT</a>
